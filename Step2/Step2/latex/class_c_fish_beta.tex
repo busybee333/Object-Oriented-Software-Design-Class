@@ -1,0 +1,113 @@
+\hypertarget{class_c_fish_beta}{}\section{C\+Fish\+Beta Class Reference}
+\label{class_c_fish_beta}\index{C\+Fish\+Beta@{C\+Fish\+Beta}}
+
+
+{\ttfamily \#include $<$Fish\+Beta.\+h$>$}
+
+Inheritance diagram for C\+Fish\+Beta\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_fish_beta}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_fish_beta_a021073e2e0034271cd7e776b1e3fed29}{C\+Fish\+Beta} (\hyperlink{class_c_aquarium}{C\+Aquarium} $\ast$aquarium)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_fish_beta_a4e4d132618735adad44d04c9c40687ca}\label{class_c_fish_beta_a4e4d132618735adad44d04c9c40687ca}} 
+\hyperlink{class_c_fish_beta_a4e4d132618735adad44d04c9c40687ca}{C\+Fish\+Beta} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_fish_beta_adbf3559baac135dff393729c51b1ab31}\label{class_c_fish_beta_adbf3559baac135dff393729c51b1ab31}} 
+\hyperlink{class_c_fish_beta_adbf3559baac135dff393729c51b1ab31}{C\+Fish\+Beta} (const \hyperlink{class_c_fish_beta}{C\+Fish\+Beta} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (disabled) \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_fish_beta_abd932894ad25a70f03c79c4f0f00fff4}{$\sim$\+C\+Fish\+Beta} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_fish_beta_ae2effbff7b98bb3cd6e1070d61d5366e}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em Draws beta fish. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_fish_beta_a5bdd3d07a57ca1f01a7f2c5c00e0a662}{Hit\+Test} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Test to see if we hit this object with a mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implements a Beta fish 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_fish_beta_a021073e2e0034271cd7e776b1e3fed29}\label{class_c_fish_beta_a021073e2e0034271cd7e776b1e3fed29}} 
+\index{C\+Fish\+Beta@{C\+Fish\+Beta}!C\+Fish\+Beta@{C\+Fish\+Beta}}
+\index{C\+Fish\+Beta@{C\+Fish\+Beta}!C\+Fish\+Beta@{C\+Fish\+Beta}}
+\subsubsection{\texorpdfstring{C\+Fish\+Beta()}{CFishBeta()}}
+{\footnotesize\ttfamily C\+Fish\+Beta\+::\+C\+Fish\+Beta (\begin{DoxyParamCaption}\item[{\hyperlink{class_c_aquarium}{C\+Aquarium} $\ast$}]{aquarium }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em aquarium} & The aquarium this is a member of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_fish_beta_abd932894ad25a70f03c79c4f0f00fff4}\label{class_c_fish_beta_abd932894ad25a70f03c79c4f0f00fff4}} 
+\index{C\+Fish\+Beta@{C\+Fish\+Beta}!````~C\+Fish\+Beta@{$\sim$\+C\+Fish\+Beta}}
+\index{````~C\+Fish\+Beta@{$\sim$\+C\+Fish\+Beta}!C\+Fish\+Beta@{C\+Fish\+Beta}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Fish\+Beta()}{~CFishBeta()}}
+{\footnotesize\ttfamily C\+Fish\+Beta\+::$\sim$\+C\+Fish\+Beta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_fish_beta_ae2effbff7b98bb3cd6e1070d61d5366e}\label{class_c_fish_beta_ae2effbff7b98bb3cd6e1070d61d5366e}} 
+\index{C\+Fish\+Beta@{C\+Fish\+Beta}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Fish\+Beta@{C\+Fish\+Beta}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Fish\+Beta\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws beta fish. 
+
+Draw our fish 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics context to draw on \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_item_a7ef8448d0c4bc53d0f1943a4dc817f6f}{C\+Item}.
+
+\mbox{\Hypertarget{class_c_fish_beta_a5bdd3d07a57ca1f01a7f2c5c00e0a662}\label{class_c_fish_beta_a5bdd3d07a57ca1f01a7f2c5c00e0a662}} 
+\index{C\+Fish\+Beta@{C\+Fish\+Beta}!Hit\+Test@{Hit\+Test}}
+\index{Hit\+Test@{Hit\+Test}!C\+Fish\+Beta@{C\+Fish\+Beta}}
+\subsubsection{\texorpdfstring{Hit\+Test()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Fish\+Beta\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Test to see if we hit this object with a mouse. 
+
+Test to see if we hit this object with a mouse. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position to test \\
+\hline
+{\em y} & Y position to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if hit. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_item_a8bd4f5e3f2eb2487125dd435719484e8}{C\+Item}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_fish_beta_8h}{Fish\+Beta.\+h}\item 
+\hyperlink{_fish_beta_8cpp}{Fish\+Beta.\+cpp}\end{DoxyCompactItemize}

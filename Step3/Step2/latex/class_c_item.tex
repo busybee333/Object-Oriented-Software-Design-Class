@@ -1,0 +1,163 @@
+\hypertarget{class_c_item}{}\section{C\+Item Class Reference}
+\label{class_c_item}\index{C\+Item@{C\+Item}}
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+Inheritance diagram for C\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_item}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_item_ac2ea847c008cf8d1de92c870c8f8262f}\label{class_c_item_ac2ea847c008cf8d1de92c870c8f8262f}} 
+\hyperlink{class_c_item_ac2ea847c008cf8d1de92c870c8f8262f}{C\+Item} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_item_a7d6042bbb9a571d2dc1d1f89016a97c8}\label{class_c_item_a7d6042bbb9a571d2dc1d1f89016a97c8}} 
+\hyperlink{class_c_item_a7d6042bbb9a571d2dc1d1f89016a97c8}{C\+Item} (const \hyperlink{class_c_item}{C\+Item} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (disabled) \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_item_a2487c6e822ed0e850544f1745b43f584}{$\sim$\+C\+Item} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_item_a394d38a058fc53f0e958ca52248560c8}{GetX} () const
+\item 
+double \hyperlink{class_c_item_ac0fe6be80f8ef19854d7f41b4803f658}{GetY} () const
+\item 
+void \hyperlink{class_c_item_a9c194f3f08e515853600cecca3e6d319}{Set\+Location} (double x, double y)
+\item 
+virtual void \hyperlink{class_c_item_a7ef8448d0c4bc53d0f1943a4dc817f6f}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics)=0
+\item 
+virtual bool \hyperlink{class_c_item_a8bd4f5e3f2eb2487125dd435719484e8}{Hit\+Test} (int x, int y)=0
+\item 
+virtual bool \hyperlink{class_c_item_af4f25e99aaf4b27ed6bdc5ff70b75c11}{Predator} ()
+\begin{DoxyCompactList}\small\item\em Tells whether or not an item is a predator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_item_a665b3fa4628b43e69b1d7f2b9529882b}{C\+Item} (\hyperlink{class_c_aquarium}{C\+Aquarium} $\ast$aquarium)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for any item in our aquarium. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_item_a2487c6e822ed0e850544f1745b43f584}\label{class_c_item_a2487c6e822ed0e850544f1745b43f584}} 
+\index{C\+Item@{C\+Item}!````~C\+Item@{$\sim$\+C\+Item}}
+\index{````~C\+Item@{$\sim$\+C\+Item}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Item()}{~CItem()}}
+{\footnotesize\ttfamily C\+Item\+::$\sim$\+C\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destructor \mbox{\Hypertarget{class_c_item_a665b3fa4628b43e69b1d7f2b9529882b}\label{class_c_item_a665b3fa4628b43e69b1d7f2b9529882b}} 
+\index{C\+Item@{C\+Item}!C\+Item@{C\+Item}}
+\index{C\+Item@{C\+Item}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{C\+Item()}{CItem()}}
+{\footnotesize\ttfamily C\+Item\+::\+C\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{class_c_aquarium}{C\+Aquarium} $\ast$}]{aquarium }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em aquarium} & The aquarium this item is a member of \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_item_a7ef8448d0c4bc53d0f1943a4dc817f6f}\label{class_c_item_a7ef8448d0c4bc53d0f1943a4dc817f6f}} 
+\index{C\+Item@{C\+Item}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual void C\+Item\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draw this item 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Graphics device to draw on \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_c_fish_beta_ae2effbff7b98bb3cd6e1070d61d5366e}{C\+Fish\+Beta}, \hyperlink{class_c_fish_carp_af0c967b07054d90f7b5c2fbfff9e95fb}{C\+Fish\+Carp}, \hyperlink{class_c_fish_magikarp_acb88cf3659f4cebd4784e7039b541c33}{C\+Fish\+Magikarp}, and \hyperlink{class_c_fish_nemo_a56389067cff39be91a796f42529458d3}{C\+Fish\+Nemo}.
+
+\mbox{\Hypertarget{class_c_item_a394d38a058fc53f0e958ca52248560c8}\label{class_c_item_a394d38a058fc53f0e958ca52248560c8}} 
+\index{C\+Item@{C\+Item}!GetX@{GetX}}
+\index{GetX@{GetX}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Get\+X()}{GetX()}}
+{\footnotesize\ttfamily double C\+Item\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The X location of the item \begin{DoxyReturn}{Returns}
+X location in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_item_ac0fe6be80f8ef19854d7f41b4803f658}\label{class_c_item_ac0fe6be80f8ef19854d7f41b4803f658}} 
+\index{C\+Item@{C\+Item}!GetY@{GetY}}
+\index{GetY@{GetY}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Get\+Y()}{GetY()}}
+{\footnotesize\ttfamily double C\+Item\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The Y location of the item \begin{DoxyReturn}{Returns}
+Y location in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_item_a8bd4f5e3f2eb2487125dd435719484e8}\label{class_c_item_a8bd4f5e3f2eb2487125dd435719484e8}} 
+\index{C\+Item@{C\+Item}!Hit\+Test@{Hit\+Test}}
+\index{Hit\+Test@{Hit\+Test}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Hit\+Test()}{HitTest()}}
+{\footnotesize\ttfamily virtual bool C\+Item\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Test this item to see if it has been clicked on 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location on the aquarium to test \\
+\hline
+{\em y} & Y location on the aquarium to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if clicked on 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_c_fish_beta_a5bdd3d07a57ca1f01a7f2c5c00e0a662}{C\+Fish\+Beta}, \hyperlink{class_c_fish_carp_a8e5c6ea5402085533d7535d4524f7fd6}{C\+Fish\+Carp}, \hyperlink{class_c_fish_magikarp_ad23ff73aff08103618b8162dcaaf01b6}{C\+Fish\+Magikarp}, and \hyperlink{class_c_fish_nemo_a7ab85960d0a36a80cd6bf7fb78afe0ee}{C\+Fish\+Nemo}.
+
+\mbox{\Hypertarget{class_c_item_af4f25e99aaf4b27ed6bdc5ff70b75c11}\label{class_c_item_af4f25e99aaf4b27ed6bdc5ff70b75c11}} 
+\index{C\+Item@{C\+Item}!Predator@{Predator}}
+\index{Predator@{Predator}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Predator()}{Predator()}}
+{\footnotesize\ttfamily bool C\+Item\+::\+Predator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Tells whether or not an item is a predator. 
+
+Tells if the item (fish) is a predator \begin{DoxyReturn}{Returns}
+false if function not overwritten/predator 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_c_fish_carp_a16a7a5c00b88e1f2ab3fd2db928bd5aa}{C\+Fish\+Carp}.
+
+\mbox{\Hypertarget{class_c_item_a9c194f3f08e515853600cecca3e6d319}\label{class_c_item_a9c194f3f08e515853600cecca3e6d319}} 
+\index{C\+Item@{C\+Item}!Set\+Location@{Set\+Location}}
+\index{Set\+Location@{Set\+Location}!C\+Item@{C\+Item}}
+\subsubsection{\texorpdfstring{Set\+Location()}{SetLocation()}}
+{\footnotesize\ttfamily void C\+Item\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the item location 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location \\
+\hline
+{\em y} & Y location \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_item_8h}{Item.\+h}\item 
+\hyperlink{_item_8cpp}{Item.\+cpp}\end{DoxyCompactItemize}
